@@ -6,7 +6,10 @@ const Color sPrimary = Color(0xff129575);
 const Color sSecondary = Color(0xffFF9C00 );
 const Color sRating = Color(0xffFFAD30);
 const Color sBlack = Color(0xff111111);
-const Color sBackground =Color(0xffF1F1F1);
+const Color sBackground =Color(0xffFFFFFF);
+const Color sGray =Color(0xffD9D9D9);
+
+
 
 const Color sSuccess = Color(0xff31B057);
 const Color sNavigatoinClick = Colors.black;
