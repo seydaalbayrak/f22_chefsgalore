@@ -45,7 +45,7 @@ Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağ
 - Tariflerini paylaşmak isteyen kişiler
 
 
-## Juriye Not
+## Jüriye Not
 
 
 
