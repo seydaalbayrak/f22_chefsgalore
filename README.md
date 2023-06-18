@@ -80,7 +80,7 @@ Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıc�
   - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
   - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
   - Kodlama kısmında daha hızlı çalışmamız gerektiği vurgulanmıştır.
-  - Her toplantıya bütün ekip üyelerinin katılmasıyla ilgili taleptte bulunulmuştur.
+  - Her toplantıya bütün ekip üyelerinin katılmasıyla ilgili talepte bulunulmuştur.
  
 
 
