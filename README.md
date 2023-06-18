@@ -63,13 +63,16 @@ Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağ
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/main/F22-TOPLANTILAR.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/Bootcamp2022Example/main/ProjectManagement/Sprint1Documents/backlog1.png) 
+![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product1.png)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product2.png)
-  ![Screenshot 3](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product4.gif)
+- 
+  ![splash](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/50a6cad8-f27e-437b-ad1f-6ed2a9c8e4d5)
+
+  ![login](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/e63bd526-3bef-484b-bc26-a6238cbdf544)
+  
+  ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
 - **Sprint Review**: 
 Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
 
@@ -84,7 +87,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 ## Product Backlog URL
 
-[Flutter Team 52 Miro Backlog Board](https://miro.com/app/board/uXjVO4kRs2w=/)
+[Flutter Team 22 Trello Backlog Board](https://trello.com/b/EWUYAtul/f22)
 
 ---
 
