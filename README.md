@@ -74,12 +74,13 @@ Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağ
   
   ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
 - **Sprint Review**: 
-Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
+Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıcı kayıt ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
 - **Sprint Retrospective:**
-  - Roller ile ilgili düzenleme yapılmış, scrum master değişmiştir.
+  - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
   - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
-  - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+  - Kodlama kısmında daha hızlı çalışmamız gerektiği vurgulanmıştır.
+  - Her toplantıya bütün ekip üyelerinin katılmasıyla ilgili taleptte bulunulmuştur.
  
 
 
