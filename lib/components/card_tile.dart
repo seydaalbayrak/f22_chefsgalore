@@ -13,7 +13,7 @@ class CardTile extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
-            boxShadow: const [BoxShadow(blurRadius: 25, color: sGray)],
+            boxShadow: const [BoxShadow(blurRadius: 25, color: sGray4)],
             borderRadius: BorderRadius.circular(sBorderRadius),
             color: sWhite),
         child: Image.asset(

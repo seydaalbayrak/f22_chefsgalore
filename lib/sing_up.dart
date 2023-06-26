@@ -195,18 +195,18 @@ class _SingUpState extends State<SingUp> {
                     const Expanded(
                       child: Divider(
                         thickness: 0.5,
-                        color: sGray,
+                        color: sGray4,
                       ),
                     ),
                     const SizedBox(width: 10),
                     Text("Veya Giriş Yap",
                         style: sPoppinsSemiBold.copyWith(
-                            color: sGray, fontSize: 11)),
+                            color: sGray4, fontSize: 11)),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Divider(
                         thickness: 0.5,
-                        color: sGray,
+                        color: sGray4,
                       ),
                     ),
                   ],
