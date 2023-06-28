@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "4199617048",
+    "project_id": "chefsgalore-24ded",
+    "storage_bucket": "chefsgalore-24ded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4199617048:android:a1c0dfd114bb8aac9de96d",
+        "android_client_info": {
+          "package_name": "com.chefsgalore.f22_chefsgalore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4199617048-5m3ut1n2g3bomfnr2obj572odslugm2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi7HJg6rmS9_u7Fo83N4xwHn3-Ta9-3Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4199617048-5m3ut1n2g3bomfnr2obj572odslugm2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
