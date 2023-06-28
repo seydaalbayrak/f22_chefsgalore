@@ -1,4 +1,5 @@
 import 'package:f22_chefsgalore/home.dart';
+import 'package:f22_chefsgalore/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:f22_chefsgalore/homepage.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: SingUp(),
     );
   }
 }

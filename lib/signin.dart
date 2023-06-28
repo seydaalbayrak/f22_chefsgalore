@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'components/card_tile.dart';
+
 void main() {
   runApp(UygulamaSayfasi());
 }
@@ -150,40 +152,14 @@ class UygulamaSayfasi extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          // Google ile giriş yapma
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.red,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          padding: EdgeInsets.symmetric(
-                            vertical: 18,
-                            horizontal: 40,
-                          ),
-                        ),
-                        icon: Icon(Icons.g_translate),
-                        label: Text('Google'),
+                      CardTile(
+                        imagePath: 'assets/images/google.png',
+                        onTap: () {},
                       ),
-                      SizedBox(width: 20),
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          // Facebook ile giriş yapma
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.blue,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          padding: EdgeInsets.symmetric(
-                            vertical: 18,
-                            horizontal: 40,
-                          ),
-                        ),
-                        icon: Icon(Icons.facebook),
-                        label: Text('Facebook'),
+                      const SizedBox(width: 20),
+                      CardTile(
+                        imagePath: 'assets/images/facebook.png',
+                        onTap: () {},
                       ),
                     ],
                   ),
