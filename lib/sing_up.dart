@@ -4,6 +4,7 @@ import 'package:f22_chefsgalore/components/my_button.dart';
 import 'package:f22_chefsgalore/components/my_textfield.dart';
 import 'package:f22_chefsgalore/homepage.dart';
 import 'package:f22_chefsgalore/service/auth.dart';
+import 'package:f22_chefsgalore/signin.dart';
 import 'package:flutter/material.dart';
 
 class SingUp extends StatefulWidget {
@@ -245,7 +246,10 @@ class _SingUpState extends State<SingUp> {
                         sPoppinsSemiBold.copyWith(fontSize: 12, color: sBlack),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                           Navigator.push(context, MaterialPageRoute(builder: (context)=>SingIn()));
+
+                      },
                       child: Text(
                         "Giriş Yap",
                         style: sPoppinsSemiBold.copyWith(

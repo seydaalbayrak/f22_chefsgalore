@@ -1,203 +1,201 @@
+import 'package:f22_chefsgalore/app_style.dart';
+import 'package:f22_chefsgalore/components/card_tile.dart';
+import 'package:f22_chefsgalore/components/my_button.dart';
+import 'package:f22_chefsgalore/components/my_textfield.dart';
+import 'package:f22_chefsgalore/homepage.dart';
+import 'package:f22_chefsgalore/service/auth.dart';
+import 'package:f22_chefsgalore/sing_up.dart';
 import 'package:flutter/material.dart';
 
-import 'components/card_tile.dart';
+import 'home.dart';
 
-void main() {
-  runApp(UygulamaSayfasi());
+class SingIn extends StatefulWidget {
+  SingIn({super.key});
+
+  @override
+  State<SingIn> createState() => _SingInState();
 }
 
-class UygulamaSayfasi extends StatelessWidget {
+class _SingInState extends State<SingIn> {
+  //textfield kontrolleri
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+
+  //checkbox kontrolleri
+  bool? isChecked = false;
+  AuthService _authService =AuthService();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: Stack(
-          children: [
-            Positioned(
-              left: 30,
-              top: 44,
-              child: Text(
-                'Merhaba',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  height: 1.5,
+    return Scaffold(
+      backgroundColor: sWhite,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 25,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Merhaba",
+                      style: sPoppinsBold.copyWith(color: sBlack, fontSize: 20),
+                    ),
+                  ],
                 ),
               ),
-            ),
-            Positioned(
-              left: 30,
-              top: 89,
-              child: Text(
-                'Tekrar Hoşgeldiniz!',
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.normal,
-                  fontSize: 20,
-                  height: 1.5,
+              const SizedBox(height: 5),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Tekrar Hoşgeldiniz!",
+                      style:
+                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 11),
+                    ),
+                  ],
                 ),
               ),
-            ),
-            Positioned(
-              left: 30,
-              top: 160,
-              right: 30,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              const SizedBox(height: 25),
+
+
+
+
+              //e-posta alanı
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "E-posta",
+                      style:
+                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 16),
+                    ),
+                  ],
+                ),
+              ),
+              MyTextfield(
+                controller: emailController,
+                hintText: 'E-posta Giriniz',
+                obscureText: false,
+              ),
+
+              const SizedBox(height: 15),
+
+              //şifre alanı
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Şifre",
+                      style:
+                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 16),
+                    ),
+                  ],
+                ),
+              ),
+              MyTextfield(
+                controller: passwordController,
+                hintText: 'Şifre Giriniz',
+                obscureText: true,
+              ),
+
+
+              const SizedBox(height: 10),
+
+
+
+              const SizedBox(height: 10),
+
+              //giriş butonu
+              MyButton(
+                buttonText: "Giriş Yap",
+                onTap: () {
+                  _authService.signIn(emailController.text, passwordController.text).then((value){
+                    return Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));});
+                },
+              ),
+
+              const SizedBox(height: 20),
+
+              //Veya Giriş Yap
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 100.0),
+                child: Row(
+                  children: [
+                    const Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: sGray4,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Text("Veya Giriş Yap",
+                        style: sPoppinsSemiBold.copyWith(
+                            color: sGray4, fontSize: 11)),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: sGray4,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              //google facebook giriş
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'E-posta',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                    ),
+                  CardTile(
+                    imagePath: 'assets/images/google.png',
+                    onTap: () {},
                   ),
-                  SizedBox(height: 8),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'E-posta Giriniz',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Şifre',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 8),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'Şifre Giriniz',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: TextButton(
-                      onPressed: () {
-                        // Şifrenizi mi unuttunuz butonu
-                      },
-                      child: Text(
-                        'Şifrenizi mi unuttunuz?',
-                        style: TextStyle(
-                          color: Color(0xFFFF9C00),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Center(
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        // Giriş yap butonu
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Color(0xFF129575),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        padding: EdgeInsets.symmetric(
-                          vertical: 18,
-                          horizontal: 85,
-                        ),
-                      ),
-                      icon: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Giriş Yap',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Icon(Icons.arrow_forward, size: 16),
-                        ],
-                      ),
-                      label: Text(''),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Center(
-                    child: Text(
-                      'Veya Giriş Yap',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        fontSize: 11,
-                        height: 1.6,
-                        color: Color(0xFFD9D9D9),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CardTile(
-                        imagePath: 'assets/images/google.png',
-                        onTap: () {},
-                      ),
-                      const SizedBox(width: 20),
-                      CardTile(
-                        imagePath: 'assets/images/facebook.png',
-                        onTap: () {},
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Center(
-                    child: TextButton(
-                      onPressed: () {
-                        // Üye ol butonuna tıklama
-                      },
-                      child: RichText(
-                        text: TextSpan(
-                          text: 'Hesabınız yok mu? ',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 11,
-                            height: 1.6,
-                            color: Colors.black,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: 'Üye Ol',
-                              style: TextStyle(
-                                color: Color(0xFFFF9C00),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  const SizedBox(width: 20),
+                  CardTile(
+                    imagePath: 'assets/images/facebook.png',
+                    onTap: () {},
                   ),
                 ],
               ),
-            ),
-          ],
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Hesabınız yok mu?",
+                    style:
+                    sPoppinsSemiBold.copyWith(fontSize: 12, color: sBlack),
+                  ),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SingUp()));
+                      },
+                      child: Text(
+                        "Üye Ol",
+                        style: sPoppinsSemiBold.copyWith(
+                            fontSize: 12, color: sSecondary),
+                      ))
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
