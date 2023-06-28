@@ -2,6 +2,8 @@ import 'package:f22_chefsgalore/app_style.dart';
 import 'package:f22_chefsgalore/components/card_tile.dart';
 import 'package:f22_chefsgalore/components/my_button.dart';
 import 'package:f22_chefsgalore/components/my_textfield.dart';
+import 'package:f22_chefsgalore/homepage.dart';
+import 'package:f22_chefsgalore/service/auth.dart';
 import 'package:flutter/material.dart';
 
 class SingUp extends StatefulWidget {
@@ -13,14 +15,14 @@ class SingUp extends StatefulWidget {
 
 class _SingUpState extends State<SingUp> {
   //textfield kontrolleri
-  final nameController = TextEditingController();
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
 
   //checkbox kontrolleri
   bool? isChecked = false;
-
+  AuthService _authService =AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -182,7 +184,10 @@ class _SingUpState extends State<SingUp> {
               //giriş butonu
               MyButton(
                 buttonText: "Kayıt Ol",
-                onTap: () {},
+                onTap: () {
+                  _authService.createPerson(nameController.text, emailController.text, passwordController.text).then((value){
+                  return Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));});
+                },
               ),
 
               const SizedBox(height: 20),
