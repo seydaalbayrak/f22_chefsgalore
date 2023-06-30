@@ -10,22 +10,18 @@ import 'package:flutter/material.dart';
 import 'home.dart';
 
 class SingIn extends StatefulWidget {
-  SingIn({super.key});
+  SingIn({Key? key});
 
   @override
   State<SingIn> createState() => _SingInState();
 }
 
 class _SingInState extends State<SingIn> {
-  //textfield kontrolleri
-
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-
-
-  //checkbox kontrolleri
   bool? isChecked = false;
-  AuthService _authService =AuthService();
+  AuthService _authService = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +31,7 @@ class _SingInState extends State<SingIn> {
           child: Column(
             children: [
               const SizedBox(
-                height: 25,
+                height: 90, // 50 birim boşluk
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -44,12 +40,13 @@ class _SingInState extends State<SingIn> {
                   children: [
                     Text(
                       "Merhaba",
-                      style: sPoppinsBold.copyWith(color: sBlack, fontSize: 20),
+                      style: sPoppinsBold.copyWith(color: sBlack, fontSize: 30),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 5),
+
+              const SizedBox(height: 5), // 20 birim boşluk
 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -58,35 +55,30 @@ class _SingInState extends State<SingIn> {
                   children: [
                     Text(
                       "Tekrar Hoşgeldiniz!",
-                      style:
-                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 11),
+                      style: sPoppinsRegular.copyWith(color: sBlack, fontSize: 20),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 25),
-
-
-
-
+              const SizedBox(height: 50), // 40 birim boşluk,
               //e-posta alanı
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "E-posta",
-                      style:
-                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 16),
+                      style: sPoppinsRegular.copyWith(color: sBlack, fontSize: 14),
+                    ),
+                    MyTextfield(
+                      controller: emailController,
+                      hintText: 'E-posta Giriniz',
+                      obscureText: false,
                     ),
                   ],
                 ),
-              ),
-              MyTextfield(
-                controller: emailController,
-                hintText: 'E-posta Giriniz',
-                obscureText: false,
               ),
 
               const SizedBox(height: 15),
@@ -94,27 +86,30 @@ class _SingInState extends State<SingIn> {
               //şifre alanı
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Şifre",
-                      style:
-                      sPoppinsRegular.copyWith(color: sBlack, fontSize: 16),
+                      style: sPoppinsRegular.copyWith(color: sBlack, fontSize: 14),
                     ),
+                    MyTextfield(
+                      controller: passwordController,
+                      hintText: 'Şifre Giriniz',
+                      obscureText: true,
+                    ),
+                    const SizedBox(height: 25), // Boşluk bırakmak için eklendi,
+                    Text(
+                      "Şifrenizi mi Unuttunuz?",
+                      style: TextStyle(
+                        color: Color(0xFFFF9C00), // #FF9C00 (turuncu)
+                        fontSize: 12,
+                      ),
+                    ),
+                    const SizedBox(height: 15), // Boşluk bırakmak için eklendi
                   ],
                 ),
               ),
-              MyTextfield(
-                controller: passwordController,
-                hintText: 'Şifre Giriniz',
-                obscureText: true,
-              ),
-
-
-              const SizedBox(height: 10),
-
-
 
               const SizedBox(height: 10),
 
@@ -122,8 +117,9 @@ class _SingInState extends State<SingIn> {
               MyButton(
                 buttonText: "Giriş Yap",
                 onTap: () {
-                  _authService.signIn(emailController.text, passwordController.text).then((value){
-                    return Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));});
+                  _authService.signIn(emailController.text, passwordController.text).then((value) {
+                    return Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                  });
                 },
               ),
 
@@ -141,9 +137,10 @@ class _SingInState extends State<SingIn> {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Text("Veya Giriş Yap",
-                        style: sPoppinsSemiBold.copyWith(
-                            color: sGray4, fontSize: 11)),
+                    Text(
+                      "Veya Giriş Yap",
+                      style: sPoppinsSemiBold.copyWith(color: sGray4, fontSize: 11),
+                    ),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Divider(
@@ -178,20 +175,19 @@ class _SingInState extends State<SingIn> {
                 children: [
                   Text(
                     "Hesabınız yok mu?",
-                    style:
-                    sPoppinsSemiBold.copyWith(fontSize: 12, color: sBlack),
+                    style: sPoppinsSemiBold.copyWith(fontSize: 12, color: sBlack),
                   ),
                   TextButton(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SingUp()));
-                      },
-                      child: Text(
-                        "Üye Ol",
-                        style: sPoppinsSemiBold.copyWith(
-                            fontSize: 12, color: sSecondary),
-                      ))
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SingUp()));
+                    },
+                    child: Text(
+                      "Üye Ol",
+                      style: sPoppinsSemiBold.copyWith(fontSize: 12, color: sSecondary),
+                    ),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
@@ -199,3 +195,4 @@ class _SingInState extends State<SingIn> {
     );
   }
 }
+
