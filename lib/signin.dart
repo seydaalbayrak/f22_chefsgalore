@@ -31,7 +31,7 @@ class _SingInState extends State<SingIn> {
           child: Column(
             children: [
               const SizedBox(
-                height: 90, // 50 birim boşluk
+                height: 90, // 90 birim boşluk
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -46,7 +46,7 @@ class _SingInState extends State<SingIn> {
                 ),
               ),
 
-              const SizedBox(height: 5), // 20 birim boşluk
+              const SizedBox(height: 5), // 5 birim boşluk
 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -60,7 +60,7 @@ class _SingInState extends State<SingIn> {
                   ],
                 ),
               ),
-              const SizedBox(height: 50), // 40 birim boşluk,
+              const SizedBox(height: 50), // 50 birim boşluk,
               //e-posta alanı
 
               Padding(
