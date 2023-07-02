@@ -101,7 +101,7 @@ Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıc�
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 360 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in en az 140 olması gerektiğine karar verildi.
 
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bayram sebebi ile 2. sprint'te ilk sprint kadar çok ve sık toplantı yapılamamıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/main/F22-TOPLANTILAR-2.SPRINT.docx)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bayram sebebi ile 2. sprint'te ilk sprint kadar çok ve sık toplantı yapılamamıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/F22-TOPLANTILAR-2.SPRINT.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
