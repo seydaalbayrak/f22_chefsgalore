@@ -106,21 +106,17 @@ Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıc�
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello1](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/3addac80-c6d9-4fbb-b0a5-5e4f003ca1fd)
 
-![trello2](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/f29dd156-97b8-4ced-9056-d81493719212)
+  ![trello2](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/f29dd156-97b8-4ced-9056-d81493719212)
 
 
 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-- 
- ![home](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/dce34039-73c3-48c6-b29c-1b2eb70e94b7)
-
- ![profile](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/2d667de8-e327-49e1-a311-9fe6dd0321e5)
-  
- ![save](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d7169a35-cd79-473b-bfe6-c4127e71e8e6)
-
- ![bildirim](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/153aad51-01da-41f3-93ed-c35e2349be40)
+  ![home](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/dce34039-73c3-48c6-b29c-1b2eb70e94b7)
+  ![profile](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/2d667de8-e327-49e1-a311-9fe6dd0321e5)
+  ![save](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d7169a35-cd79-473b-bfe6-c4127e71e8e6)
+  ![bildirim](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/153aad51-01da-41f3-93ed-c35e2349be40)
 
 
 - **Sprint Review**: 
