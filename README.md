@@ -60,7 +60,7 @@ Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağ
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 360 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
 
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/main/F22-TOPLANTILAR.docx)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/F22-TOPLANTILAR.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
