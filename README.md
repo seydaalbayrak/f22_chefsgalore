@@ -104,16 +104,25 @@ Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıc�
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bayram sebebi ile 2. sprint'te ilk sprint kadar çok ve sık toplantı yapılamamıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/F22-TOPLANTILAR-2.SPRINT.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
+![trello1](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/3addac80-c6d9-4fbb-b0a5-5e4f003ca1fd)
+
+![trello2](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/f29dd156-97b8-4ced-9056-d81493719212)
+
+
+
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
 - 
-  ![splash](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/50a6cad8-f27e-437b-ad1f-6ed2a9c8e4d5)
+ ![home](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/dce34039-73c3-48c6-b29c-1b2eb70e94b7)
 
-  ![login](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/e63bd526-3bef-484b-bc26-a6238cbdf544)
+ ![profile](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/2d667de8-e327-49e1-a311-9fe6dd0321e5)
   
-  ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
+ ![save](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d7169a35-cd79-473b-bfe6-c4127e71e8e6)
+
+ ![bildirim](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/153aad51-01da-41f3-93ed-c35e2349be40)
+
+
 - **Sprint Review**: 
 Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Menü tasarımı henüz tamamlanmamıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
