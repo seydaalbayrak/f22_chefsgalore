@@ -1,5 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:f22_chefsgalore/addPage.dart';
 import 'package:f22_chefsgalore/app_style.dart';
+import 'package:f22_chefsgalore/bookmarkList.dart';
 import 'package:f22_chefsgalore/home.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget{
@@ -13,8 +15,8 @@ class _HomePageState extends State<HomePage>{
 
   final List<Widget> _tabs = [
     Home(), // Ana sayfa içeriği
-    Container(), // Kaydetme  listesi
-    Container(), // Diğer sayfalar
+    BookmarkList(), // Kaydetme  listesi
+    AddPage(), // Diğer sayfalar
     Container(), // Diğer sayfalar
     Container(), // Diğer sayfalar
   ];
