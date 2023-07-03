@@ -118,7 +118,7 @@ class _SingInState extends State<SingIn> {
                 buttonText: "Giriş Yap",
                 onTap: () {
                   _authService.signIn(emailController.text, passwordController.text).then((value) {
-                    return Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                    return Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
                   });
                 },
               ),
