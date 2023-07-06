@@ -1,8 +1,6 @@
-import 'package:f22_chefsgalore/home.dart';
+import 'package:f22_chefsgalore/repice.dart';
 import 'package:flutter/material.dart';
-import 'package:f22_chefsgalore/homepage.dart';
 
-import 'sing_up.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Repice()
     );
   }
 }
