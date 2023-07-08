@@ -1,10 +1,14 @@
+
+import 'package:f22_chefsgalore/repice.dart';
+import 'package:flutter/material.dart';
+
 import 'package:f22_chefsgalore/home.dart';
 import 'package:f22_chefsgalore/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:f22_chefsgalore/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'sing_up.dart';
+
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       home: SingIn(),
+
     );
   }
 }
