@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app_style.dart';
+import 'app_style.dart';
 
 class MyTextfield extends StatelessWidget {
   final controller;

@@ -1,10 +1,10 @@
-import 'package:f22_chefsgalore/app_style.dart';
+import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:f22_chefsgalore/components/card_tile.dart';
 import 'package:f22_chefsgalore/components/my_button.dart';
 import 'package:f22_chefsgalore/components/my_textfield.dart';
-import 'package:f22_chefsgalore/homepage.dart';
+import 'package:f22_chefsgalore/pages/nav_page.dart';
 import 'package:f22_chefsgalore/service/auth.dart';
-import 'package:f22_chefsgalore/signin.dart';
+import 'package:f22_chefsgalore/pages/signin.dart';
 import 'package:flutter/material.dart';
 
 class SingUp extends StatefulWidget {
@@ -187,7 +187,7 @@ class _SingUpState extends State<SingUp> {
                 buttonText: "Kayıt Ol",
                 onTap: () {
                   _authService.createPerson(nameController.text, emailController.text, passwordController.text).then((value){
-                  return Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));});
+                  return Navigator.push(context, MaterialPageRoute(builder: (context)=>const NavPage()));});
                 },
               ),
 

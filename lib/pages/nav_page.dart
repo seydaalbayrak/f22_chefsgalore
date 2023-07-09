@@ -1,24 +1,27 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:f22_chefsgalore/addPage.dart';
-import 'package:f22_chefsgalore/app_style.dart';
-import 'package:f22_chefsgalore/bookmarkList.dart';
-import 'package:f22_chefsgalore/home.dart';
+import 'package:f22_chefsgalore/pages/add_page.dart';
+import 'package:f22_chefsgalore/components/app_style.dart';
+import 'package:f22_chefsgalore/pages/bookmark_list.dart';
+import 'package:f22_chefsgalore/pages/home.dart';
+import 'package:f22_chefsgalore/pages/profile.dart';
 import 'package:flutter/material.dart';
-class HomePage extends StatefulWidget{
-  const HomePage({Key? key}):super(key:key);
+
+import 'notifications.dart';
+class NavPage extends StatefulWidget{
+  const NavPage({Key? key}):super(key:key);
   @override
-  State<HomePage> createState()=>_HomePageState();
+  State<NavPage> createState()=>_NavPageState();
 }
 
-class _HomePageState extends State<HomePage>{
+class _NavPageState extends State<NavPage>{
   int _currentIndex = 0;
 
   final List<Widget> _tabs = [
-    Home(), // Ana sayfa içeriği
-    BookmarkList(), // Kaydetme  listesi
-    AddPage(), // Diğer sayfalar
-    Container(), // Diğer sayfalar
-    Container(), // Diğer sayfalar
+    const Home(), // Ana sayfa içeriği
+    const BookmarkList(), // Kaydetme  listesi
+    const AddPage(), // Diğer sayfalar
+    const Notifications(), // Diğer sayfalar
+    const Profile(), // Diğer sayfalar
   ];
 
 
@@ -27,7 +30,7 @@ class _HomePageState extends State<HomePage>{
     return Scaffold(
       backgroundColor: sBackground,
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: sWhite,
+        backgroundColor: sWhite.withOpacity(0.5),
         color: sPrimary,
         items: const [
           Icon(Icons.home,color:sWhite),

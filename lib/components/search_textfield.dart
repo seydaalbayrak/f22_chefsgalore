@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app_style.dart';
+import 'app_style.dart';
 
 class SearchTextfield extends StatelessWidget {
   const SearchTextfield({super.key});

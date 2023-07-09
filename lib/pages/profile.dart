@@ -1,38 +1,37 @@
+import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
 
-class MyApp extends StatefulWidget {
+class Profile extends StatefulWidget {
+  const Profile({super.key});
+
   @override
-  _MyAppState createState() => _MyAppState();
+  // ignore: library_private_types_in_public_api
+  _ProfileState createState() => _ProfileState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _ProfileState extends State<Profile> {
   bool showRectangles = false;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Stack(
           children: [
             Positioned(
               top: 54,
               left: 159,
-              child: Container(
-                width: 58,
+              child: SizedBox(
+                width: 70,
                 height: 27,
                 child: Center(
                   child: Text(
                     'Profil',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Poppins',
-                      height: 27 / 18,
-                      letterSpacing: 0,
+                    style: sPoppinsBold.copyWith(
+                      color: sBlack,
+                      fontSize: 22,
                     ),
                   ),
                 ),
@@ -44,15 +43,15 @@ class _MyAppState extends State<MyApp> {
               child: Container(
                 width: 99,
                 height: 99,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.grey,
+                  color: sGray3,
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     Icons.account_circle,
                     size: 80,
-                    color: Colors.white,
+                    color: sWhite,
                   ),
                 ),
               ),
@@ -60,16 +59,14 @@ class _MyAppState extends State<MyApp> {
             Positioned(
               top: 205,
               left: 30,
-              child: Container(
+              child: SizedBox(
                 width: 146,
                 height: 24,
                 child: Text(
                   'Ela OĞUZ',
-                  style: TextStyle(
+                  style: sPoppinsBold.copyWith(
+                    color: sBlack,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Poppins',
-                    height: 24 / 18,
                   ),
                 ),
               ),
@@ -77,17 +74,14 @@ class _MyAppState extends State<MyApp> {
             Positioned(
               top: 229,
               left: 30,
-              child: Container(
+              child: SizedBox(
                 width: 56,
                 height: 17,
                 child: Text(
                   'Öğrenci',
-                  style: TextStyle(
+                  style: sPoppinsRegular.copyWith(
+                    color: sGray3,
                     fontSize: 11,
-                    fontWeight: FontWeight.normal,
-                    fontFamily: 'Poppins',
-                    height: 17 / 11,
-                    color: Color(0xFFA9A9A9),
                   ),
                 ),
               ),
@@ -95,18 +89,14 @@ class _MyAppState extends State<MyApp> {
             Positioned(
               top: 256,
               left: 30,
-              child: Container(
+              child: SizedBox(
                 width: 256,
                 height: 51,
                 child: Text(
                   'Yemek yapmayı ve boş zamanlarımda yeni tarifler denemeyi seviyorum...',
-                  style: TextStyle(
+                  style: sPoppinsRegular.copyWith(
+                    color: sGray3,
                     fontSize: 11,
-                    fontWeight: FontWeight.normal,
-                    fontFamily: 'Poppins',
-                    height: 17 / 11,
-                    color: Color(0xFF797979),
-                    letterSpacing: 0,
                   ),
                   textAlign: TextAlign.left,
                 ),
@@ -128,22 +118,20 @@ class _MyAppState extends State<MyApp> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: showRectangles ? Colors.white : Color(0xFF71B1A1),
+                        color: showRectangles ? sWhite : sPrimary,
                       ),
                       child: Center(
                         child: Text(
                           'Tarifler',
-                          style: TextStyle(
+                          style: sPoppinsRegular.copyWith(
+                            color: showRectangles ? sPrimary : sWhite,
                             fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                            fontFamily: 'Poppins',
-                            color: showRectangles ? Color(0xFF71B1A1) : Colors.white,
                           ),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   GestureDetector(
                     onTap: () {
                       // Videolar bar tıklandığında yapılacak işlemler
@@ -153,22 +141,20 @@ class _MyAppState extends State<MyApp> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Color(0xFF71B1A1),
+                        color: sPrimary,
                       ),
                       child: Center(
                         child: Text(
                           'Videolar',
-                          style: TextStyle(
+                          style: sPoppinsRegular.copyWith(
+                            color: sWhite,
                             fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                            fontFamily: 'Poppins',
-                            color: Colors.white,
                           ),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   GestureDetector(
                     onTap: () {
                       // Etiket bar tıklandığında yapılacak işlemler
@@ -178,16 +164,14 @@ class _MyAppState extends State<MyApp> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Color(0xFF71B1A1),
+                        color: sPrimary,
                       ),
                       child: Center(
                         child: Text(
                           'Etiket',
-                          style: TextStyle(
+                          style: sPoppinsRegular.copyWith(
+                            color: sWhite,
                             fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                            fontFamily: 'Poppins',
-                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -203,7 +187,7 @@ class _MyAppState extends State<MyApp> {
                 child: Container(
                   width: 315,
                   height: 150,
-                  color: Colors.grey,
+                  color: sGray3,
                 ),
               ),
             if (showRectangles) // Dikdörtgenleri göstermek için koşul
@@ -213,98 +197,74 @@ class _MyAppState extends State<MyApp> {
                 child: Container(
                   width: 315,
                   height: 150,
-                  color: Colors.grey,
+                  color: sGray3,
                 ),
               ),
-            Positioned(
+             Positioned(
               top: 116,
-              right: 60,
+              right: 40,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     'Tarifler',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'Poppins',
-                      height: 17 / 11,
-                      color: Color(0xFFA9A9A9),
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsRegular.copyWith(
+                            color: sGray3,
+                            fontSize: 11,
+                          ),
                   ),
                   Text(
                     '2',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Poppins',
-                      height: 30 / 20,
-                      color: Colors.black,
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsBold.copyWith(
+                            color: sBlack,
+                            fontSize: 20,
+                          ),
                   ),
                 ],
               ),
             ),
-            Positioned(
+             Positioned(
               top: 116,
-              right: 130,
+              right: 100,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     'Takipçi',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'Poppins',
-                      height: 17 / 11,
-                      color: Color(0xFFA9A9A9),
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsRegular.copyWith(
+                            color: sGray3,
+                            fontSize: 11,
+                          ),
                   ),
                   Text(
                     '304',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Poppins',
-                      height: 30 / 20,
-                      color: Colors.black,
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsBold.copyWith(
+                            color: sBlack,
+                            fontSize: 20,
+                          ),
                   ),
                 ],
               ),
             ),
-            Positioned(
+             Positioned(
               top: 116,
-              right: 205,
+              right: 160,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     'Takip',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'Poppins',
-                      height: 17 / 11,
-                      color: Color(0xFFA9A9A9),
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsRegular.copyWith(
+                            color: sGray3,
+                            fontSize: 11,
+                          ),
                   ),
                   Text(
                     '250',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Poppins',
-                      height: 30 / 20,
-                      color: Colors.black,
-                      letterSpacing: 0,
-                    ),
+                    style: sPoppinsBold.copyWith(
+                            color: sBlack,
+                            fontSize: 20,
+                          ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'app_style.dart';
+import '../components/app_style.dart';
+import 'bookmark_list.dart';
 
 class Repice extends StatefulWidget {
   const Repice({super.key});
@@ -35,21 +36,25 @@ class _RepiceState extends State<Repice> {
       //appbar kısı geri ve menü butonu
       appBar: AppBar(
         backgroundColor: sWhite,
-        leading: Padding(
+        leading:  Padding(
           padding: const EdgeInsets.only(top: 20, left: 25, right: 25),
-          child: IconButton(
-            icon: const Icon(
-              Icons.arrow_back,
-              color: sBlack,
-            ),
-            onPressed: () {},
+          child: InkWell(
+            
+            onTap: (){
+               Navigator.pop(context);
+            },
+            child: const Icon(
+                Icons.arrow_back,
+                color: sBlack,
+              ),
           ),
         ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 25, right: 25),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                },
                 icon: const Icon(
                   Icons.more_horiz,
                   color: sBlack,

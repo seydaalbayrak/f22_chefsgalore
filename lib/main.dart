@@ -1,12 +1,8 @@
 
-import 'package:f22_chefsgalore/repice.dart';
 import 'package:flutter/material.dart';
-
-import 'package:f22_chefsgalore/home.dart';
-import 'package:f22_chefsgalore/signin.dart';
-import 'package:flutter/material.dart';
-import 'package:f22_chefsgalore/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'pages/loading_screen.dart';
+
 
 
 
@@ -22,10 +18,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-
-      home: SingIn(),
+      home: LoadingScreen(),
 
     );
   }

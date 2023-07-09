@@ -1,4 +1,4 @@
-import 'package:f22_chefsgalore/app_style.dart';
+import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -10,28 +10,28 @@ class TabbarItems extends StatefulWidget {
 }
 
 class _TabbarItemsState extends State<TabbarItems> {
-  List Titles = [
+  List titles = [
     "Klasik Türk Salatası",
     "Çıtır Lahana Salatası",
     "Karides Tavuk ",
     "Barbekü Tavuk",
     "Portekiz Piri Piri "
   ];
-  List TitlesAlt = [
+  List titlesAlt = [
     "Domatesli Biftek",
     "Üzümlü Pilav",
     "Portekiz Piri",
     "Karides Tavuk ",
     "Soslu tavuk",
   ];
-  List TitleName = [
+  List titleName = [
     "İbrahim Balta",
     "Şeyda Albayrak",
     "Beyza Yılmaz",
     "Tuba Gürbüz",
     "Mustafa Erdoğan",
   ];
-  List TitleAltImages = [
+  List titleAltImages = [
     "altimage1",
     "altimage2",
     "altimage3",
@@ -39,7 +39,7 @@ class _TabbarItemsState extends State<TabbarItems> {
     "altimage5",
   ];
 
-  List TitleImages = [
+  List titleImages = [
     "image1",
     "image2",
     "image3",
@@ -113,7 +113,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
-                  itemCount: TitleImages.length,
+                  itemCount: titleImages.length,
                   itemBuilder: (context, index) {
                     return Stack(
                       children: [
@@ -143,7 +143,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                                 children: [
                                   Center(
                                     child: Text(
-                                      Titles[index],
+                                      titles[index],
                                       style: sPoppinsBold.copyWith(
                                           fontSize: 14, color: sBlack),
                                     ),
@@ -200,7 +200,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                               borderRadius: BorderRadius.circular(60),
                             ),
                             child: Image.asset(
-                              "assets/images/${TitleImages[index]}.png",
+                              "assets/images/${titleImages[index]}.png",
                               height: 155,
                               width: 155,
                               fit: BoxFit.cover,
@@ -233,7 +233,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
-                  itemCount: TitleAltImages.length,
+                  itemCount: titleAltImages.length,
                   itemBuilder: (context, index) {
                     return Stack(
                       alignment: Alignment.topRight,
@@ -263,7 +263,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text(
-                                    TitlesAlt[index],
+                                    titlesAlt[index],
                                     style: sPoppinsBold.copyWith(
                                         color: sBlack, fontSize: 14),
                                   ),
@@ -285,7 +285,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                                           "assets/images/card_profile.png"),
                                       const SizedBox(width: 5),
                                       Text(
-                                        TitleName[index],
+                                        titleName[index],
                                         style: sPoppinsMedium.copyWith(
                                             color: sGray3, fontSize: 12),
                                       ),
@@ -318,7 +318,7 @@ class _TabbarItemsState extends State<TabbarItems> {
                                 borderRadius: BorderRadius.circular(80),
                               ),
                               child: Image.asset(
-                                "assets/images/${TitleAltImages[index]}.png",
+                                "assets/images/${titleAltImages[index]}.png",
                                 height: 160,
                                 width: 160,
                                 fit: BoxFit.contain,

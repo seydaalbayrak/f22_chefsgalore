@@ -1,4 +1,4 @@
-import 'package:f22_chefsgalore/app_style.dart';
+import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CardTile extends StatelessWidget {

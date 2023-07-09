@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,8 +12,8 @@ class MyApp extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 50.0),
-              child: Text(
+              padding: const EdgeInsets.only(top: 50.0),
+              child: const Text(
                 'Yemek Tarifleri',
                 style: TextStyle(
                   fontFamily: 'Poppins',
@@ -25,10 +24,10 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
+            const Positioned(
               top: 58,
               left: 30,
-              child: Container(
+              child: SizedBox(
                 width: 20,
                 height: 20,
                 child: Icon(
@@ -51,7 +50,7 @@ class MyApp extends StatelessWidget {
                       border: Border.all(color: Colors.grey),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Expanded(
                           child: Padding(
@@ -77,8 +76,8 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 16),
-                  Text(
+                  const SizedBox(height: 16),
+                  const Text(
                     'Son Aramalar',
                     style: TextStyle(
                       fontFamily: 'Poppins',
