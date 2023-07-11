@@ -48,8 +48,8 @@ class _TabbarItemsState extends State<TabbarItems> {
   ];
 
   List<String> tabCategories = [
-    "All",
-    "Indian",
+    "Tümü",
+    "Turkey",
     "Italian",
     "Mexican",
     "Chinese"

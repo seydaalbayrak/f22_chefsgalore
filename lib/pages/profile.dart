@@ -1,7 +1,6 @@
 import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 
-
 class Profile extends StatefulWidget {
   const Profile({super.key});
 
@@ -21,11 +20,9 @@ class _ProfileState extends State<Profile> {
         body: Stack(
           children: [
             Positioned(
-              top: 54,
+              top: 45,
               left: 159,
               child: SizedBox(
-                width: 70,
-                height: 27,
                 child: Center(
                   child: Text(
                     'Profil',
@@ -118,13 +115,21 @@ class _ProfileState extends State<Profile> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: showRectangles ? sWhite : sPrimary,
+                        color: showRectangles ? sPrimary : sWhite,
+                         boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 0.5,
+                            blurRadius: 1,
+                            offset: const Offset(0, 2), // changes position of shadow
+                          ),
+                        ],
                       ),
                       child: Center(
                         child: Text(
                           'Tarifler',
                           style: sPoppinsRegular.copyWith(
-                            color: showRectangles ? sPrimary : sWhite,
+                            color: showRectangles ? sWhite : sPrimary,
                             fontSize: 14,
                           ),
                         ),
@@ -141,13 +146,21 @@ class _ProfileState extends State<Profile> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: sPrimary,
+                        color: sWhite,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 0.5,
+                            blurRadius: 1,
+                            offset: const Offset(0, 2), // changes position of shadow
+                          ),
+                        ],
                       ),
                       child: Center(
                         child: Text(
                           'Videolar',
                           style: sPoppinsRegular.copyWith(
-                            color: sWhite,
+                            color: sPrimary,
                             fontSize: 14,
                           ),
                         ),
@@ -164,13 +177,21 @@ class _ProfileState extends State<Profile> {
                       height: 34,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: sPrimary,
+                        color: sWhite,
+                         boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 0.5,
+                            blurRadius: 1,
+                            offset: const Offset(0, 2), // changes position of shadow
+                          ),
+                        ],
                       ),
                       child: Center(
                         child: Text(
                           'Etiket',
                           style: sPoppinsRegular.copyWith(
-                            color: sWhite,
+                            color: sPrimary,
                             fontSize: 14,
                           ),
                         ),
@@ -200,7 +221,7 @@ class _ProfileState extends State<Profile> {
                   color: sGray3,
                 ),
               ),
-             Positioned(
+            Positioned(
               top: 116,
               right: 40,
               child: Column(
@@ -209,21 +230,21 @@ class _ProfileState extends State<Profile> {
                   Text(
                     'Tarifler',
                     style: sPoppinsRegular.copyWith(
-                            color: sGray3,
-                            fontSize: 11,
-                          ),
+                      color: sGray3,
+                      fontSize: 11,
+                    ),
                   ),
                   Text(
                     '2',
                     style: sPoppinsBold.copyWith(
-                            color: sBlack,
-                            fontSize: 20,
-                          ),
+                      color: sBlack,
+                      fontSize: 20,
+                    ),
                   ),
                 ],
               ),
             ),
-             Positioned(
+            Positioned(
               top: 116,
               right: 100,
               child: Column(
@@ -232,21 +253,21 @@ class _ProfileState extends State<Profile> {
                   Text(
                     'Takipçi',
                     style: sPoppinsRegular.copyWith(
-                            color: sGray3,
-                            fontSize: 11,
-                          ),
+                      color: sGray3,
+                      fontSize: 11,
+                    ),
                   ),
                   Text(
                     '304',
                     style: sPoppinsBold.copyWith(
-                            color: sBlack,
-                            fontSize: 20,
-                          ),
+                      color: sBlack,
+                      fontSize: 20,
+                    ),
                   ),
                 ],
               ),
             ),
-             Positioned(
+            Positioned(
               top: 116,
               right: 160,
               child: Column(
@@ -255,16 +276,16 @@ class _ProfileState extends State<Profile> {
                   Text(
                     'Takip',
                     style: sPoppinsRegular.copyWith(
-                            color: sGray3,
-                            fontSize: 11,
-                          ),
+                      color: sGray3,
+                      fontSize: 11,
+                    ),
                   ),
                   Text(
                     '250',
                     style: sPoppinsBold.copyWith(
-                            color: sBlack,
-                            fontSize: 20,
-                          ),
+                      color: sBlack,
+                      fontSize: 20,
+                    ),
                   ),
                 ],
               ),

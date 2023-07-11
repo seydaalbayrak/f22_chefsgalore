@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../components/app_style.dart';
-import 'bookmark_list.dart';
 
 class Repice extends StatefulWidget {
   const Repice({super.key});
@@ -82,7 +81,7 @@ class _RepiceState extends State<Repice> {
                           borderRadius: BorderRadius.circular(sBorderRadius),
                         ),
                       ),
-                      child: Image.asset("assets/images/recipeimage.png"),
+                      child: Image.asset("assets/images/recipeimage1.png"),
                     ),
                   ),
                   Positioned(

@@ -1,8 +1,6 @@
 import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(Notifications());
-
 class Notifications extends StatefulWidget {
   const Notifications({super.key});
 
@@ -32,6 +30,31 @@ class _NotificationsState extends State<Notifications> {
       message: 'Ela Ak gönderine bir yorum bıraktı: Hemen denedim. Nefis oldu!',
       image: 'assets/images/women.jpg',
     ),
+    NotificationItem(
+      message: 'Ezgi Yeter yorumunu beğendi.',
+      image: 'assets/images/girl.jpg',
+    ),
+    NotificationItem(
+      message: 'Emre Uslu gönderine bir yorum bıraktı:  '
+          'En kısa sürede deneyeceğim.',
+      image: 'assets/images/man.jpg',
+    ),
+    NotificationItem(
+      message: 'Cemre Soy gönderini beğendi.',
+      image: 'assets/images/woman2.jpg',
+    ),
+    NotificationItem(
+      message: 'Eren Erim seni takip etti .',
+      image: 'assets/images/man3.jpg',
+    ),
+     NotificationItem(
+      message: 'Ela Ak gönderine bir yorum bıraktı: Hemen denedim. Nefis oldu!',
+      image: 'assets/images/women.jpg',
+    ),
+    NotificationItem(
+      message: 'Ezgi Yeter yorumunu beğendi.',
+      image: 'assets/images/girl.jpg',
+    ),
   ];
   List<NotificationItem> followingNotifications = [
     NotificationItem(
@@ -53,28 +76,6 @@ class _NotificationsState extends State<Notifications> {
       message: 'İrem Arı yeni bir tarif ekledi. Görüntülemek için hemen tıkla!',
       image: 'assets/images/2woman.jpg',
     ),
-  ];
-
-  List<NotificationItem> yesterdayNotifications = [
-    NotificationItem(
-      message: 'Ezgi Yeter yorumunu beğendi.',
-      image: 'assets/images/girl.jpg',
-    ),
-    NotificationItem(
-      message: 'Emre Uslu gönderine bir yorum bıraktı:  '
-          'En kısa sürede deneyeceğim.',
-      image: 'assets/images/man.jpg',
-    ),
-    NotificationItem(
-      message: 'Cemre Soy gönderini beğendi.',
-      image: 'assets/images/woman2.jpg',
-    ),
-    NotificationItem(
-      message: 'Eren Erim seni takip etti .',
-      image: 'assets/images/man3.jpg',
-    ),
-  ];
-  List<NotificationItem> yesterdayNotifications2 = [
     NotificationItem(
       message:
           'Ömer Örnek yeni bir tarif ekledi. Görüntülemek için hemen tıkla!',
@@ -94,6 +95,15 @@ class _NotificationsState extends State<Notifications> {
           'Bahar Yelken yeni bir tarif ekledi. Görüntülemek için hemen tıkla!',
       image: 'assets/images/teenage-girl.jpg',
     ),
+    NotificationItem(
+      message: 'İrem Arı yeni bir tarif ekledi. Görüntülemek için hemen tıkla!',
+      image: 'assets/images/2woman.jpg',
+    ),
+    NotificationItem(
+      message:
+          'Ömer Örnek yeni bir tarif ekledi. Görüntülemek için hemen tıkla!',
+      image: 'assets/images/people2.jpg',
+    ),
   ];
 
   @override
@@ -103,7 +113,7 @@ class _NotificationsState extends State<Notifications> {
       home: Scaffold(
         body: Column(
           children: [
-            const SizedBox(height: 50),
+            const SizedBox(height: 45),
             Text(
               'BİLDİRİMLER',
               style: sPoppinsBold.copyWith(
@@ -130,7 +140,7 @@ class _NotificationsState extends State<Notifications> {
                       ),
                       backgroundColor: MaterialStateProperty.resolveWith<Color>(
                         (Set<MaterialState> states) {
-                          return isPressed1 ? sPrimary : Colors.white;
+                          return isPressed1 ? sPrimary : sWhite;
                         },
                       ),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -151,7 +161,7 @@ class _NotificationsState extends State<Notifications> {
                           'Takipçilerim',
                           style: TextStyle(
                             fontSize: 17,
-                            color: isPressed1 ? Colors.white : Colors.black,
+                            color: isPressed1 ? sWhite : sPrimary,
                           ),
                         ),
                       ],
@@ -171,7 +181,7 @@ class _NotificationsState extends State<Notifications> {
                       ),
                       backgroundColor: MaterialStateProperty.resolveWith<Color>(
                         (Set<MaterialState> states) {
-                          return isPressed2 ? sPrimary : Colors.white;
+                          return isPressed2 ? sPrimary : sWhite;
                         },
                       ),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -191,7 +201,7 @@ class _NotificationsState extends State<Notifications> {
                           'Takip ettiklerim',
                           style: TextStyle(
                             fontSize: 17,
-                            color: isPressed2 ? Colors.white : Colors.black,
+                            color: isPressed2 ? sWhite : sPrimary,
                           ),
                         ),
                       ],
@@ -207,13 +217,14 @@ class _NotificationsState extends State<Notifications> {
                 alignment: Alignment.center,
                 child: Text(
                   isPressed1 ? 'Bugün' : 'Bugün',
-                  style: TextStyle(
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: sPoppinsMedium.copyWith(
+                color: sBlack,
+                fontSize: 22,
+              ),
                 ),
               ),
             ),
+            const SizedBox(height: 10),
             Expanded(
               child: ListView.builder(
                 itemCount: isPressed1
@@ -244,48 +255,6 @@ class _NotificationsState extends State<Notifications> {
               ),
             ),
             const SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Align(
-                alignment: Alignment.center,
-                child: Text(
-                  isPressed2 ? 'Dün' : 'Dün',
-                  style: TextStyle(
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: isPressed1
-                    ? yesterdayNotifications.length
-                    : yesterdayNotifications2.length,
-                itemBuilder: (context, index) {
-                  NotificationItem notification = isPressed1
-                      ? yesterdayNotifications[index]
-                      : yesterdayNotifications2[index];
-
-                  return Card(
-                    color: sGray4,
-                    child: ListTile(
-                      leading: CircleAvatar(
-                        radius: 18,
-                        backgroundImage: AssetImage(notification.image),
-                      ),
-                      title: Text(
-                        notification.message,
-                        style: const TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
           ],
         ),
       ),

@@ -16,10 +16,13 @@ class AddPage extends StatelessWidget {
         backgroundColor: sBackground,
         appBar: AppBar(
           centerTitle: true,
-          title:  Text("Yeni Bir Yemek Tarifi",style: sPoppinsBold.copyWith(
-          color: sBlack,
-          fontSize: 22,
-        ),),
+          title:  Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Text("Yeni Bir Yemek Tarifi",style: sPoppinsBold.copyWith(
+            color: sBlack,
+            fontSize: 22,
+                  ),),
+          ),
           backgroundColor: sWhite,
           elevation: 0,
         ),
