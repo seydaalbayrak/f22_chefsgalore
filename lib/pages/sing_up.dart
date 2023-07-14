@@ -187,7 +187,7 @@ class _SingUpState extends State<SingUp> {
                 buttonText: "Kayıt Ol",
                 onTap: () {
                   _authService.createPerson(nameController.text, emailController.text, passwordController.text).then((value){
-                  return Navigator.push(context, MaterialPageRoute(builder: (context)=>const NavPage()));});
+                  return Navigator.push(context, MaterialPageRoute(builder: (context)=> SingIn()));});
                 },
               ),
 

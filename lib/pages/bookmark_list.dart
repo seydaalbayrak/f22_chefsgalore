@@ -56,27 +56,24 @@ class BookmarkList extends StatelessWidget {
                   //yıldız bölümü
                   left: 290,
                   top: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
-                      decoration: ShapeDecoration(
-                        color: const Color(0xFFFFE1B3),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(sBorderRadius),
-                        ),
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFFFFE1B3),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(sBorderRadius),
                       ),
-                      child: Row(
-                        children: [
-                          Text('☆ 4.0',
-                              textAlign: TextAlign.right,
-                              style: sPoppinsSemiBold.copyWith(
-                                color: sBlack,
-                                fontSize: 9,
-                              )),
-                        ],
-                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Text('☆ 4.0',
+                            textAlign: TextAlign.right,
+                            style: sPoppinsSemiBold.copyWith(
+                              color: sBlack,
+                              fontSize: 9,
+                            )),
+                      ],
                     ),
                   ),
                 ),
@@ -84,50 +81,47 @@ class BookmarkList extends StatelessWidget {
                   //bokmark bölümü
                   left: 305,
                   top: 123,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            child: Container(
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
+                  child: SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              color: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          left: 4,
+                          top: 4,
+                          child: SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white),
+                                  ),
                                 ),
-                              ),
+                                const Positioned(
+                                  child: Icon(
+                                    Icons.bookmark_border,
+                                    size: 16,
+                                    color: sPrimary,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                          Positioned(
-                            left: 4,
-                            top: 4,
-                            child: SizedBox(
-                              width: 16,
-                              height: 16,
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    child: Container(
-                                      decoration: const BoxDecoration(
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                  const Positioned(
-                                    child: Icon(
-                                      Icons.bookmark_border,
-                                      size: 16,
-                                      color: sPrimary,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -135,25 +129,22 @@ class BookmarkList extends StatelessWidget {
                 Positioned(
                   left: 230,
                   top: 123,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 3.50),
-                      child: Row(
-                        children: [
-                          const Icon(
-                            Icons.access_alarms_rounded,
-                            size: 18,
-                            color: sGray4,
-                          ),
-                          const SizedBox(width: 5),
-                          Text(
-                            '20 min',
-                            style: sPoppinsSemiBold.copyWith(
-                                color: sGray4, fontSize: 12),
-                          ),
-                        ],
-                      ),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 3.50),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.access_alarms_rounded,
+                          size: 18,
+                          color: sGray4,
+                        ),
+                        const SizedBox(width: 5),
+                        Text(
+                          '20 min',
+                          style: sPoppinsSemiBold.copyWith(
+                              color: sGray4, fontSize: 12),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -161,15 +152,12 @@ class BookmarkList extends StatelessWidget {
                 Positioned(
                   left: 35,
                   top: 123,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 3.50),
-                      child: Text(
-                        'By Chef',
-                        style: sPoppinsSemiBold.copyWith(
-                            color: sGray4, fontSize: 12),
-                      ),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 3.50),
+                    child: Text(
+                      'By Chef',
+                      style: sPoppinsSemiBold.copyWith(
+                          color: sGray4, fontSize: 12),
                     ),
                   ),
                 ),

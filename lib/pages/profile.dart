@@ -1,5 +1,8 @@
 import 'package:f22_chefsgalore/components/app_style.dart';
+import 'package:f22_chefsgalore/pages/loading_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../service/auth.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -11,6 +14,8 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   bool showRectangles = false;
+  final authService = AuthService();
+
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +29,24 @@ class _ProfileState extends State<Profile> {
               left: 159,
               child: SizedBox(
                 child: Center(
-                  child: Text(
-                    'Profil',
-                    style: sPoppinsBold.copyWith(
-                      color: sBlack,
-                      fontSize: 22,
-                    ),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Profil',
+                        style: sPoppinsBold.copyWith(
+                          color: sBlack,
+                          fontSize: 22,
+                        ),
+                      ),
+                      const SizedBox(width: 90),
+                      //profil çıkış 
+                      IconButton(onPressed: (){
+                        authService.signOut().then((value){
+                          return Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const LoadingScreen()));
+                        });
+                      }, icon:const Icon(Icons.exit_to_app_outlined))
+                    ],
                   ),
                 ),
               ),
