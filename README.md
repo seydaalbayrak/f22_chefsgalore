@@ -137,5 +137,44 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
 ---
 
+# Sprint 3
+-**Sprint notları**: User Story’ler product backlog’ların içine yazılmıştır. Product bcklog item’lere tıklandığında hikayelerin detayları okunabilir.
 
+- **Sprint içinde tamamlanması tahmin edilen puan**: 120 Puan
+
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 360 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 120 puan olması gerektiğine karar verildi.
+
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Buna ek WhatsApp uygulaması da haberleşme ve bilgi aktarımı için sık sık kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/F22-TOPLANTILAR.docx)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+- - 
+  ![splash](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/50a6cad8-f27e-437b-ad1f-6ed2a9c8e4d5)
+
+  ![login](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/e63bd526-3bef-484b-bc26-a6238cbdf544)
+  
+  ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
+- **Sprint Review**: 
+Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıcı kayıt ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
+
+- **Sprint Retrospective:**
+  - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Kodlama kısmında daha hızlı çalışmamız gerektiği vurgulanmıştır.
+  - Her toplantıya bütün ekip üyelerinin katılmasıyla ilgili talepte bulunulmuştur.
+ 
+
+
+---
+
+## Product Backlog URL
+
+[Flutter Team 22 Trello Backlog Board](https://trello.com/b/EWUYAtul/f22)
+
+---
 
