@@ -158,7 +158,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
   ![tarif](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/1c70e439-fed2-40cf-bfbd-52255c541698)
   
-  ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
+  ![tarifekleme](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/6770f381-306f-4273-b9e5-19de770d8f2c)
 - **Sprint Review**: 
 Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıcı kayıt ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
