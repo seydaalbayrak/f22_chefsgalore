@@ -156,7 +156,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 - - 
   ![search](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/2f778682-1d39-455c-9dad-e6553e8253ed)
 
-  ![login](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/e63bd526-3bef-484b-bc26-a6238cbdf544)
+  ![tarif](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/1c70e439-fed2-40cf-bfbd-52255c541698)
   
   ![singup](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/8bc37f97-0e99-4de3-ac7a-741797028ef0)
 - **Sprint Review**: 
