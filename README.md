@@ -154,21 +154,19 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-- - 
+- 
   ![search](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/2f778682-1d39-455c-9dad-e6553e8253ed)
 
   ![tarif](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/1c70e439-fed2-40cf-bfbd-52255c541698)
   
   ![tarifekleme](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/6770f381-306f-4273-b9e5-19de770d8f2c)
 - **Sprint Review**: 
-Alınan kararlar: Arama ekranı, yemek tarifi ekranı ve tarif ekleme ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
+Alınan kararlar: Arama ekranı, yemek tarifi ekranı ve tarif ekleme ekranı oluşturulmuş ve firebase bağlantısı sağlanmış ve kalan tüm eksikler tamamlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
 - **Sprint Retrospective:**
-  - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
-  - Kodlama kısmında daha hızlı çalışmamız gerektiği vurgulanmıştır.
-  - Her toplantıya bütün ekip üyelerinin katılmasıyla ilgili talepte bulunulmuştur.
- 
+  - Daha sık toplantı yaparak daha çok iletişimde bulunabilirdik.
+  - Kodlama kısmını daha erken bitirip video üzerinde daha çok çalışabilirdik.
+     
 
 
 ---
