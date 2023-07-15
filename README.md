@@ -146,7 +146,8 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 360 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 120 puan olması gerektiğine karar verildi.
 
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Buna ek WhatsApp uygulaması da haberleşme ve bilgi aktarımı için sık sık kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats] (https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/F22-TOPLANTILAR.docx)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bu Sprint dönemi Slack yerine WhatsApp uygulaması da haberleşme ve bilgi aktarımı için daha sık kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: ![slack](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/0206c3b9-25ff-42fa-b25a-abab64b33112)
+
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/d171a794-64d5-4c34-8681-203e3b8c6d91)
@@ -160,7 +161,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
   
   ![tarifekleme](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/6770f381-306f-4273-b9e5-19de770d8f2c)
 - **Sprint Review**: 
-Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıcı kayıt ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
+Alınan kararlar: Arama ekranı, yemek tarifi ekranı ve tarif ekleme ekranı oluşturulmuş ve firebase bağlantısı sağlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
 - **Sprint Retrospective:**
   - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
