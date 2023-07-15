@@ -154,7 +154,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
 - **Ürün Durumu**: Ekran görüntüleri:
 - - 
-  ![splash](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/50a6cad8-f27e-437b-ad1f-6ed2a9c8e4d5)
+  ![search](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/2f778682-1d39-455c-9dad-e6553e8253ed)
 
   ![login](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/e63bd526-3bef-484b-bc26-a6238cbdf544)
   
