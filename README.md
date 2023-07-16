@@ -21,7 +21,7 @@ Takım Flutter 22
 
 ## Ürün Açıklaması
 
-Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağımıza karar veremediğimizde, belirli konseptler içeren menüler hazırlamamız gerektiğinde, elimizdeki malzemeleri verimli kullanmak istediğimizde ya da bu malzemeler ile farklı insan gruplarına farklı menüler hazırlamamız gerektiğinde kullanabileceğimiz oldukça kullanışlı bir uygulama.  Buna ek olarak gıda toleranslarımız olabilir, bazı yiyeceklere alerjimiz olabilir ya da sağlığımız için spesifik diyetler yapmamız gerekebilir. Chef’s Galore’un filtreleme özelliği sayesinde uygulama üzerinden seçtiğimiz malzemeler ile birbirinden farklı tarifler elde ederek lezzetli menüler çıkarmak mümkün. Bu uygulama hem çok düşünmeyip araştırmaya gerek kalmadan hızlıca tarifler sunarak zaman tasarrufuna hem de elimizdeki yiyecekleri verimli bir şekilde farklı menülerde kullanmamıza olanak sağlayarak besin tasarrufuna olanak sağlayacaktır. Ayrıca bireysel olarak evinizde vereceğiniz davetlerde de restoran bünyesinde hazırlanan çoklu menü uygulamalarında da rahatlıkla kullanılabilir.
+Chef’s Galore temel olarak bir yemek tarifi uygulamasıdır. Ne yemek yapacağımıza karar veremediğimizde, belirli konseptler içeren menüler hazırlamamız gerektiğinde, elimizdeki malzemeleri verimli kullanmak istediğimizde ya da bu malzemeler ile farklı insan gruplarına farklı menüler hazırlamamız gerektiğinde kullanabileceğimiz oldukça kullanışlı bir uygulama.  Buna ek olarak gıda toleranslarımız olabilir, bazı yiyeceklere alerjimiz olabilir ya da sağlığımız için spesifik diyetler yapmamız gerekebilir. Chef’s Galore’un filtreleme özelliği sayesinde uygulama üzerinden çeşitli malzemeler ile birbirinden farklı tarifler elde ederek lezzetli menüler çıkarmak mümkün. Bu uygulama hem çok düşünmeyip araştırmaya gerek kalmadan hızlıca tarifler sunarak zaman tasarrufuna hem de elimizdeki yiyecekleri verimli bir şekilde farklı menülerde kullanmamıza olanak sağlayarak besin tasarrufuna olanak sağlayacaktır. Ayrıca bireysel olarak evinizde vereceğiniz davetlerde de restoran bünyesinde hazırlanan çoklu menü uygulamalarında da rahatlıkla kullanılabilir.
 
 
 - **Uygulama birincil fonksiyonu**: Elimizdeki yiyecekleri kullanarak, besin ve zaman tasarrufu sağlayarak dilediğimiz tarzda menü tavsiyeleri vererek lezzetli yemekler ortaya çıkarılmasına yardımcı olmak.
@@ -166,6 +166,7 @@ Alınan kararlar: Arama ekranı, yemek tarifi ekranı ve tarif ekleme ekranı ol
 - **Sprint Retrospective:**
   - Daha sık toplantı yaparak daha çok iletişimde bulunabilirdik.
   - Kodlama kısmını daha erken bitirip video üzerinde daha çok çalışabilirdik.
+  - Uygulama verilen süre içinde tamamlanmıştır. İleride uygulamayı geliştirmek üzere farklı özellikler eklenmesi de planlanmaktadır. Dil desteği, üye olmadan giriş yapabilme özelliği, elde olan malzemeleri uygulamada ilgili alana yazdığımızda bize uygun tarifleri verme seçeneği ve bu sayede de yemek malzemelerinde israftan kaçınma-tasarruf etme planlanmaktadır.
      
 
 
