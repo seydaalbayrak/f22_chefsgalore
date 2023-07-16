@@ -116,7 +116,7 @@ Alınan kararlar: Uygulama ana ekranı, kullanıcı giriş ekranı ve kullanıc�
   ![home](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/dce34039-73c3-48c6-b29c-1b2eb70e94b7)
   ![profile](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/2d667de8-e327-49e1-a311-9fe6dd0321e5)
   ![kayıt](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/cf82318e-f4a8-4f86-bbab-e6961417de4b)
-  ![bildirim](https://github.com/seydaalbayrak/f22_chefsgalore/assets/118055744/153aad51-01da-41f3-93ed-c35e2349be40)
+  ![bildirim](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/1e8eb2ae-9d9d-4cb4-a3c6-6ec8afd1c129)
 
 
 - **Sprint Review**: 
