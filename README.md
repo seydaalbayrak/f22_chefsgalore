@@ -151,6 +151,8 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trellosprintbaşı](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/47383079-f6c0-4638-aa1b-0e0c94399660)
+![sprint3trelloson](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/34358dfa-67fe-496f-b318-45c6b8eda3bd)
+
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
