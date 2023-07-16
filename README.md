@@ -146,7 +146,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 360 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 120 puan olması gerektiğine karar verildi.
 
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bu Sprint dönemi Slack yerine WhatsApp uygulaması da haberleşme ve bilgi aktarımı için daha sık kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: ![slack](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/0206c3b9-25ff-42fa-b25a-abab64b33112)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Bu Sprint dönemi Slack yerine WhatsApp uygulaması da haberleşme ve bilgi aktarımı için daha sık kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats](https://github.com/seydaalbayrak/f22_chefsgalore/blob/toplant%C4%B1lar/f22toplant%C4%B1lar-sprint3.docx)
 
 
 - **Sprint board update**: Sprint board screenshotları: 
