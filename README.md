@@ -159,7 +159,7 @@ Alınan kararlar: Home, profil, kaydedilen tarifler ve bildirimler ekranı oluş
 
   ![tarif](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/1c70e439-fed2-40cf-bfbd-52255c541698)
   
-  ![tarifekleme](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/6770f381-306f-4273-b9e5-19de770d8f2c)
+  ![yemektarifi](https://github.com/seydaalbayrak/f22_chefsgalore/assets/130319599/d938758e-44f7-4ba3-837c-4d654d10f93a)
 - **Sprint Review**: 
 Alınan kararlar: Arama ekranı, yemek tarifi ekranı ve tarif ekleme ekranı oluşturulmuş ve firebase bağlantısı sağlanmış ve kalan tüm eksikler tamamlanmıştır. Yazılan kodlar test edilmiş ve herhangi bir sıkıntı bulunmamıştır. Sprint Review katılımcıları: Gruptaki herkes
 
