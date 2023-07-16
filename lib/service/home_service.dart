@@ -13,4 +13,23 @@ class HomeService{
     });
     return Category(id: documentRef.id,name: name);
   }
+
+  // Veri gösterme
+  Stream<QuerySnapshot> getCategory(){
+    var ref =_firestore.collection("category").snapshots();
+    return ref;
+  }
+
+  //Veri silme
+
+Future<void> removeCategory(String docId){
+    var ref=_firestore.collection("category").doc(docId).delete();
+    return ref;
+}
+
+  // Veri gösterme
+  Stream<QuerySnapshot> getRecipe(){
+    var ref =_firestore.collection("Recipe").snapshots();
+    return ref;
+  }
 }

@@ -1,6 +1,7 @@
 import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import '../service/home_service.dart';
 
 class TabbarItems extends StatefulWidget {
   const TabbarItems({super.key});
@@ -8,7 +9,7 @@ class TabbarItems extends StatefulWidget {
   @override
   State<TabbarItems> createState() => _TabbarItemsState();
 }
-
+HomeService _homeService= HomeService();
 class _TabbarItemsState extends State<TabbarItems> {
   List titles = [
     "Klasik Türk Salatası",
@@ -68,7 +69,7 @@ class _TabbarItemsState extends State<TabbarItems> {
           SizedBox(
             height: 51,
             width: double.infinity,
-            child: ListView.builder(
+           /* child: ListView.builder(
               shrinkWrap: true,
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
@@ -101,7 +102,50 @@ class _TabbarItemsState extends State<TabbarItems> {
                   ),
                 );
               },
+            ),*/
+            child: StreamBuilder(
+              stream: _homeService.getCategory(),
+              builder:(context,snapshot){
+                return !snapshot.hasData
+                    ? CircularProgressIndicator()
+                    :ListView.builder(
+                  itemCount: snapshot.data?.docs.length,
+                 // shrinkWrap: true,
+                  //physics: const BouncingScrollPhysics(),
+                  //scrollDirection: Axis.horizontal,
+                  itemBuilder: (context,index){
+                    var mycategory=snapshot.data?.docs[index];
+                    return SizedBox(
+                      width: double.infinity,
+                      child: AnimatedContainer(
+                        duration: const Duration(microseconds: 300),
+                        margin: const EdgeInsets.all(9),
+                        width: 61,
+                        height: 31,
+                        decoration: BoxDecoration(
+                          color:selectedIndex==index?sPrimary:sWhite,
+                          borderRadius: selectedIndex==index
+                            ? BorderRadius.circular(sBorderRadius)
+                              : BorderRadius.circular(20)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "${mycategory?['name']}",
+
+                            style: sPoppinsRegular.copyWith(
+                                fontSize: 11,
+                                color: selectedIndex == index ? sWhite : sPrimary),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
+
+            }
             ),
+
+
           ),
           const SizedBox(height: 10),
           //orta bölümdeki resimli yemek menü
@@ -109,7 +153,7 @@ class _TabbarItemsState extends State<TabbarItems> {
             children: [
               SizedBox(
                 height: 250,
-                child: ListView.builder(
+              /*  child: ListView.builder(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
@@ -210,6 +254,118 @@ class _TabbarItemsState extends State<TabbarItems> {
                       ],
                     );
                   },
+                ),*/
+
+               child:StreamBuilder(
+                  stream:_homeService.getRecipe(),
+                  builder: (context,snapshot){
+                    return !snapshot.hasData
+                        ?CircularProgressIndicator()
+                        :ListView.builder(
+                      itemCount:snapshot.data?.docs.length ,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder:(context,index){
+                        var myrecipe=snapshot.data?.docs[index];
+
+                        return Stack(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top:60),
+                              child: Container(
+                                margin: const EdgeInsets.symmetric(horizontal: 10),
+                                height: 220,
+                                width: 180,
+                                decoration: BoxDecoration(
+                                  color:sGray4,
+                                  borderRadius:
+                                    BorderRadius.circular(sBorderRadius),
+                                  boxShadow: const[
+                                    BoxShadow(
+                                      blurRadius: 1,
+                                      spreadRadius: 1,
+                                      color:sGray4,
+                                    )
+                                  ],
+                                ),
+                                child:Padding(
+                                  padding: const EdgeInsets.all(8),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      Center(
+                                        child: Text(
+                                          "${myrecipe?['name']}",
+                                          style:sPoppinsBold.copyWith(
+                                            fontSize: 14,color:sBlack
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(height: 40),
+                                      Text(
+                                        "Time",
+                                        style:sPoppinsMedium.copyWith(
+                                          color:sGray3,
+                                          fontSize: 11,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 6,),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            "${myrecipe?["time"]}",
+                                            style: sPoppinsMedium.copyWith(
+                                              color:sBlack,
+                                              fontSize: 13,
+                                            ),
+                                          ),
+                                          Container(
+                                            height: 25,
+                                            width: 25,
+                                            decoration: BoxDecoration(
+                                              color: sWhite,
+                                              borderRadius:
+                                                BorderRadius.circular(30),
+                                            ),
+                                            child: InkWell(
+                                              onTap: (){},
+                                              child: const Icon(
+                                                Icons.bookmark_border,
+                                                size: 18,
+                                                color:sPrimary,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+
+                            ),
+                            Positioned(
+                              left:25,
+                                child:Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(60),
+                                  ),
+                                  child: Image.network(
+                                    "${myrecipe?["image"]}",
+                                    height: 145,
+                                    width: 145,
+                                    fit:BoxFit.cover,
+                                  ),
+                                )
+                            ),
+
+                          ],
+
+                        );
+                      } ,
+                    );
+                  },
                 ),
               ),
            
@@ -229,7 +385,7 @@ class _TabbarItemsState extends State<TabbarItems> {
               //alt yeni tarifli menü
               SizedBox(
                 height: 140,
-                child: ListView.builder(
+               child: ListView.builder(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
@@ -330,6 +486,8 @@ class _TabbarItemsState extends State<TabbarItems> {
                     );
                   },
                 ),
+
+
               ),
             ],
           ),

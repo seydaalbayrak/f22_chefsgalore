@@ -1,7 +1,7 @@
 import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:f22_chefsgalore/components/my_button.dart';
 import 'package:flutter/material.dart';
-
+import '../service/home_service.dart';
 import '../components/search_textfield.dart';
 import '../components/tabbar.dart';
 
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
   int selectedTime = 0;
   int selectedRate = 0;
   int selectedCategory = 0;
-
+HomeService _homeService= HomeService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -271,7 +271,9 @@ class _HomeState extends State<Home> {
                                       //kategori list view
                                       SizedBox(
                                         height: 51,
-                                        child: ListView.builder(
+
+                                        /*child: ListView.builder(
+
                                           shrinkWrap: true,
                                           physics:
                                               const BouncingScrollPhysics(),
@@ -319,6 +321,61 @@ class _HomeState extends State<Home> {
                                               ),
                                             );
                                           },
+                                        ),*/
+
+                                        child: StreamBuilder(
+                                          stream: _homeService.getCategory(),
+                                          builder:(context,snapshot){
+
+                                            return !snapshot.hasData
+                                                ? CircularProgressIndicator()
+                                                : ListView.builder(
+                                              itemCount: snapshot.data?.docs.length,
+                                              itemBuilder: (context,index){
+                                                var mycategory=snapshot.data?.docs[index];
+                                                return SizedBox(
+                                                  height: 51,
+                                                  child:AnimatedContainer(
+                                                    duration: const Duration(
+                                                      microseconds: 300
+                                                    ),
+                                                    margin: const EdgeInsets.all(9),
+                                                    width:61,
+                                                    height: 31,
+                                                    decoration: BoxDecoration(
+                                                      color:selectedCategory==index? sPrimary
+                                                          :sWhite,
+                                                      borderRadius:
+                                                        selectedCategory==
+                                                        index
+                                                        ?BorderRadius
+                                                            .circular(sBorderRadius)
+                                                    : BorderRadius.circular(20)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "${mycategory?['name']}",
+                                                        style: sPoppinsRegular
+                                                        .copyWith(
+                                                          fontSize: 12,
+                                                          color:
+                                                            selectedCategory==
+                                                            index
+                                                            ? sWhite
+                                                             : sPrimary,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    ),
+                                                  );
+
+
+                                              },
+
+
+
+                                            );
+
+                                          }
                                         ),
                                       ),
                                       const SizedBox(height: 40),
