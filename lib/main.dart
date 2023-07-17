@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'pages/loading_screen.dart';
-import 'pages/nav_page.dart';
 
 
 

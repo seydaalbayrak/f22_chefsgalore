@@ -2,7 +2,6 @@ import 'package:f22_chefsgalore/components/app_style.dart';
 import 'package:f22_chefsgalore/components/card_tile.dart';
 import 'package:f22_chefsgalore/components/my_button.dart';
 import 'package:f22_chefsgalore/components/my_textfield.dart';
-import 'package:f22_chefsgalore/pages/nav_page.dart';
 import 'package:f22_chefsgalore/service/auth.dart';
 import 'package:f22_chefsgalore/pages/signin.dart';
 import 'package:flutter/material.dart';
