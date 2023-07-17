@@ -398,7 +398,6 @@ HomeService _homeService= HomeService();
                 ],
               ),
 
-              const SizedBox(height: 10),
 
               //tabbar
               const TabbarItems(),
